@@ -28,7 +28,7 @@ Utilizando o NodeJS e os pacotes Express, Sequelize e MySQL construir uma API, c
 
 import { Sequelize } from "sequelize";
 
-export const sequelize = new Sequelize('carros', 'aluno', 'senacrs', {
+export const sequelize = new Sequelize('#nome_banco', 'aluno', 'senacrs', {
     host: 'localhost',
     dialect: 'mysql', /* one of 'mysql' | 'postgres' | 'sqlite' | 'mariadb' | 'mssql' | 'db2' | 'snowflake' | 'oracle' */
     port: 3306 
@@ -37,7 +37,7 @@ export const sequelize = new Sequelize('carros', 'aluno', 'senacrs', {
 ```` 
 
 **No Insomnia**:
-1. URL: http://localhost:3000/carros
+1. URL: http://localhost:3000/#nome_Banco
 2. Criar uma pasta pro projeto
 3. Criar as HTTP Requests básicas (GET (listagem), POST (criação do registro no banco), PUT (alterações no registro), DEL (exclusão do registro))
 
